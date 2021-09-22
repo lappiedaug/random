@@ -34,5 +34,6 @@ while True:
 		print(Try,end='\r')
 
 	if Try==pasws:
+		print(Try,end='\r')
 		break
 		
