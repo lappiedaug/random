@@ -8,7 +8,18 @@ max_list = 3
 pasws = 'malas'
 
 while True:
-	
+	criteria = (tuples[i]==0)
+		i+=1
+		
+		Try = ''
+		for m in tuples:
+			Try += chr(97+m)
+		
+		print(Try,end='\r')
+
+	if Try==pasws:
+		print(Try,end='\r')
+		break
 
 	i = 0
 	criteria = True
@@ -24,16 +35,5 @@ while True:
 		if all(list(map(lambda x:x==0,tuples))) and i==(len(tuples)-1):
 			tuples.append(0)
 			
-		criteria = (tuples[i]==0)
-		i+=1
 		
-		Try = ''
-		for m in tuples:
-			Try += chr(97+m)
-		
-		print(Try,end='\r')
-
-	if Try==pasws:
-		print(Try,end='\r')
-		break
 		
